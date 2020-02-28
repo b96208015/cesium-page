@@ -20,7 +20,24 @@ html, body {
     top: 5px;
     left: 5px;
 }
-.btn {
+#toolbar #infoPanel {
+    display: none;
+    background: rgba(42, 42, 42, 0.8);
+    padding: 4px;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+#toolbar button {
     color: #eee;
     background-color: rgba(42, 42, 42, 0.8);
+}
+#charts {
+    width: 750px;
+    height: 300px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 10px;
+    bottom: 80px;
+    background-color: rgba(255, 255, 255, 0.8);
 }

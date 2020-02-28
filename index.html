@@ -13,7 +13,8 @@
     <link href="./src/style.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.4.3/css/tabulator.min.css" rel="stylesheet">
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.4.3/js/tabulator.min.js"></script>        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.4.3/js/tabulator.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.6.0/echarts-en.min.js"></script>
     <script src="https://cesium.com/downloads/cesiumjs/releases/1.66/Build/Cesium/Cesium.js"></script>
     <script src="./src/index.js"></script>
 </head>
@@ -21,13 +22,18 @@
 <body>
     <div id="cesiumContainer"></div>
     <div id="toolbar">
-        <button type="button" id="contour-old" class="btn">
+        <button type="button" id="contour-old">
             <span>等高線圖 92 ~ 94年 (2003 ~ 2005)</span>
         </button>
-        <button type="button" id="contour-new" class="btn">
+        <button type="button" id="contour-new">
             <span>等高線圖 99 ~ 104年 (2010 ~ 2015)</span>
         </button>
+        <button type="button" id="terrainProfileEstimation">
+            <span>地形剖面分析</span>
+        </button>
+        <table id="infoPanel"></table>
     </div>
+    <div id="charts"></div>
 </body>
 
 </html>
